@@ -1,5 +1,6 @@
 import React from 'react';
 import SystemBadge from './SystemBadge';
+import EnglishProficiency from './EnglishProficiency';
 
 const CountryDetails = ({ countryData, countryName }) => {
   if (!countryData) {
@@ -52,6 +53,9 @@ const CountryDetails = ({ countryData, countryName }) => {
           </div>
         </div>
       </div>
+      
+      {/* English Proficiency Component */}
+      <EnglishProficiency countryName={countryName} />
       
       {countryData.notes && (
         <div className="mt-4">
